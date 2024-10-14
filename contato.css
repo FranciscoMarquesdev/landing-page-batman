@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "kdam Thmor Pro", sans-serif;
+  background-color: #000000;
+  margin-top: 20px;
+}
+header {
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 140px;
+}
+.menu-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 1000;
+}
+
+.line {
+  height: 4px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+.menu {
+  display: none; /* Esconder o menu inicialmente */
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  background-color: rgba(91, 91, 91, 0.203);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  z-index: 999;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 25px 0;
+  padding-left: 25%;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Estilo para mostrar o menu */
+.menu.show {
+  display: block; /* Mostrar o menu quando a classe "show" é adicionada */
+}
+.contact-section {
+  padding: 40px 20px;
+  background-color: #000000; /* Cor de fundo leve */
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #000000; /* Fundo branco para o formulário */
+  border-radius: 8px;
+  box-shadow: 0 2px 20px red;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid red;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: red;
+  outline: none;
+}
+
+label span {
+  color: #fff;
+  float: left;
+}
+
+button {
+  width: 50%;
+  padding: 10px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+footer {
+  height: 300px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav {
+  width: 60%;
+}
+ul {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+li {
+  list-style: none;
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.5s;
+}
+li:hover {
+  color: red;
+}
+.Todos {
+  color: #fff;
+  height: 40px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "kdam Thmor Pro", sans-serif;
+}
+.Todos span {
+  position: relative; /* Adicione isso */
+  top: -100px; /* Ajuste esse valor para mover para cima */
+  margin-top: 15px; /* Ou remova se não for necessário */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Mude para center se preferir */
+  font-family: "kdam Thmor Pro", sans-serif;
+}
+
+.footer-navigation {
+  display: ;
+}
+.footer-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+}
+.img-icon {
+  position: relative;
+  top: -100px;
+  display: flex;
+  text-align: center;
+  margin: 1rem 0;
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  padding-left: 5rem 3;
+}
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+  }
+  .line {
+    background-color: #fff;
+  }
+  .footer-list {
+    display: none;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0px;
+    padding-left: 34%;
+  }
+
+  .Todos {
+    height: 80px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "kdam Thmor Pro", sans-serif;
+  }
+  .img-icon {
+    text-align: center;
+    margin: 1rem 0;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    padding-left: 4rem 3;
+  }
+}
